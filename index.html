@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Anna Sezen">
+	<meta name="description" lang="en" content="Web-site for search partners for spending holidays">
+	<title>Dreamshare.com</title>
+	<link rel="stylesheet" href="public/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper"><!--root element-->
+		<div class="promo-background"> <!--background image for header and promo-->
+			<div class="overlay">
+				<div class="container" role="banner">
+					<header class="header flex">
+						<div class="header__logo logo">
+							<a class="logo__link" href="#">Dreamshare</a>
+						</div>
+						<ul class="auth"><!--authorization block-->
+							<li class="auth__item"><a href="./login.html" class="auth__btn btn">Войти</a></li>
+							<li class="auth__item"><a href="./registration/registration.html" class="auth__btn btn btn-color-white">Присоединиться</a></li>
+						</ul>
+					</header>
+					<section class="promo-info"><!--info about site-->
+						<h1 class="promo-info__title upper">Поделись своим идеальным отпуском Dreamshare</h1>
+						<div class="promo-info__text">И воплоти свои мечты в реальность с новыми друзьями</div>
+						<a href="#partners" class="promo-info__btn btn btn-color-red" role="button">Найти партнеров для поездки</a>
+					</section>
+				</div>
+			</div>
+		</div>
+		<section class="instruction-cover">
+			<div class="container">
+				<h2 class="instruction__title title">Как Dreamshare работает?</h2>
+				<div class="instruction flex"><!--How it works block-->
+					<div class="step instruction__step instruction__step1">
+						<div class="step__content">
+							<a href="./registration/registration.html" class="step__btn btn btn-color-red">Шаг 1</a>
+							<h3 class="step__title">Регистрация</h3>
+							<div class="step__text">Зарегистрируйся и ты сможешь найти друзей, которые разделяют твою мечту идеального отпуска</div>
+						</div>
+					</div>
+					<div class="step instruction__step instruction__step2">
+						<div class="step__content">
+							<a href="./partners/partner.html" class="step__btn btn btn-color-red">Шаг 2</a>
+							<h3 class="step__title">Планирование</h3>
+							<div class="step__text">Спланируйте все до мельчайших подробностей. Карта, расписание, билеты и все необходимое для путешествия...</div>
+						</div>					
+					</div>
+					<div class="step instruction__step instruction__step3">
+						<div class="step__content">
+							<a href="./gallery/gallery.html" class="step__btn btn btn-color-red">Шаг 3</a>
+							<h3 class="step__title">Самое приятное</h3>
+							<div class="step__text">...и наслаждайтесь отличным отдыхом в замечательной компании друзей!</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="partners_cover" id="partners">
+			<div class="container">
+				<h2 class="title">Знакомьтесь с нашими партнерами...</h2>
+				<ul class="partners flex"><!--partners block-->
+					<li class="partner">
+						<a href="./partners/parnter.html">
+							<img class="partner__avatar partner1" src="src/img/avatar1.png" alt="Partner" width="120" height="120">
+						</a>
+						<div class="partner__name">Иван</div>
+						<div class="partner__about">Я из Киеве. Обожаю играть в теннис и слушать музыку громко.</div>
+					</li>
+					<li class="partner">
+						<a href="./partners/parnter.html">
+							<img class="partner__avatar partner1" src="src/img/avatar2.png" alt="Partner" width="120" height="120">
+						</a>
+						<div class="partner__name">Маша</div>
+						<div class="partner__about">В данный момент живу во Львове. Любитель искусства, языков и путешествий.</div>
+					</li>
+					<li class="partner">
+						<a href="./partners/parnter.html">
+							<img class="partner__avatar partner1" src="src/img/avatar3.png" alt="Partner" width="120" height="120">
+						</a>
+						<div class="partner__name">Диана</div>
+						<div class="partner__about">Живу в Афинах, Греция. Я люлбю классическую одежду, релакс-музыку и зеленый чай.</div>
+					</li>
+					<li class="partner">
+						<a href="./partners/parnter.html">
+							<img class="partner__avatar partner1" src="src/img/avatar4.png" alt="Partner" width="120" height="120">
+						</a>
+						<div class="partner__name">Кристофер</div>
+						<div class="partner__about">Фанат Звездных Войн. У меня врожденный энтузиазм к созданию новых вещей.</div>
+					</li>
+				</ul>
+				<a href="./partners/partner.html" class="btn btn-color-redWhite" role="button">Другие партнеры</a>
+			</div>
+		</section>
+		<section class="ideas_cover">
+			<div class="container">
+				<h2 class="title">Знакомьтесь с лучшими идеями проведения отпуска</h2>
+				<div  class="ideas flex"><!--ideas block-->
+					<a href="./gallery/gallery.html" class="idea idea1">
+						<div class="idea__title">Спорт и Мероприятия</div>
+					</a>
+					<a href="./gallery/gallery.html" class="idea idea2">
+						<div class="idea__title">Wellness и Здоровье</div>
+					</a>
+					<a href="./gallery/gallery.html" class="idea idea3">
+						<div class="idea__title">Экстремальный спорт и Экспедиции</div>
+					</a>
+					<a href="./gallery/gallery.html" class="idea idea4">
+						<div class="idea__title">Азартные игры</div>
+					</a>
+					<a href="./gallery/gallery.html" class="idea idea5">
+						<div class="idea__title">Культура и Образование</div>
+					</a>
+					<a href="./gallery/gallery.html" class="idea idea6">
+						<div class="idea__title">Наслаждение и Расслабление</div>
+					</a>
+					<a href="./gallery/gallery.html" class="idea idea7">
+						<div class="idea__title">Пешие прогулки</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="create-cover">
+			<div class="container">
+				<div class="create">
+					<h2 class="create__title title">Начать планировать свой отпуск</h2>
+					<div class="create__text">
+						Привет! А какой отпуск интересует тебя?
+					</div>
+					<form action="send" class="form" role="search"><!--send form block-->
+						<input list="interests" class="form__text" placeholder="Введите ваши интересы...">
+						<datalist id="interests">
+							<option value="sport"></option>
+							<option value="architecture"></option>
+							<option value="music"></option>
+							<option value="extreme"></option>
+							<option value="food"></option>
+							<option value="religion"></option>
+							<option value="relax"></option>
+							<option value="books"></option>
+							<option value="nature"></option>
+							<option value="people"></option>
+						</datalist>
+						<a href="./partners/partner.html" class="form__btn btn btn-color-red" role="button">Найти партнеров</a>
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container flex">
+				<div class="footer__logo logo">
+					<a class="logo__link logo__link-color-red" href="#">Dreamshare</a>
+				</div>
+				<nav class="nav"><!--sites navigation-->
+					<h3 class="nav__title">Компания</h3>
+					<ul class="nav__links" role="menu">
+						<li role="menuitem"><a href="about.html" class="nav__link">О нас</a></li>
+						<li role="menuitem"><a href="contacts.html" class="nav__link">Контакты</a></li>
+						<li role="menuitem"><a href="reviews.html" class="nav__link">Отзывы</a></li>
+						<li role="menuitem"><a href="blog.html" class="nav__link">Блог</a></li>
+						<li role="menuitem"><a href="security.html" class="nav__link">Конфиденциальность</a></li>
+						<li role="menuitem"><a href="help.html" class="nav__link">Помощь</a></li>
+					</ul>
+				</nav>
+				<div class="footer__partners">
+					<h3><a href="./partners/partner.html" class="footer__title">Партнеры</a></h3>
+				</div>
+				<div class="design upper"><!--copyright-->
+					дизайн от
+					<div class="design__logo"><img src="src/img/gesign_logo.png" alt="Design logo" width="110" height="24"></div>
+				</div>
+			</div>
+		</footer>
+	</div>	
+</body>
+</html>
