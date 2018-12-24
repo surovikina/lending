@@ -1,4 +1,8 @@
 .ideas_cover {
   padding: $global-medium-gutter 0;
-  border: 2px solid darkblue;
+
+
+  .container {
+    padding: 0 $global-medium-gutter;
+  }
 }

@@ -1,4 +1,71 @@
 .instruction-cover {
-  border: 2px solid red;
-  padding: $global-medium-gutter 0;
+  padding: $global-large-gutter 0;
+
+  .container {
+    padding: 0 $global-medium-gutter;
+  }
+
+  .instruction {
+    flex-direction: column;
+
+    & > div:not(:last-child) {
+      margin-bottom: $global-medium-margin;
+    }
+  }
+
+  .step {
+    position: relative;
+
+
+    &:first-child {
+      margin-left: 10%;
+
+    }
+    &:nth-child(2) {
+      margin-left: 20%;
+    }
+
+    &:nth-child(3) {
+      margin-left: 30%;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      left: -10px;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 87, 34, 0.61);
+      z-index: -2;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      left: -25px;
+      top: -20px;
+      display: block;
+      width: 40%;
+      height: 100px;
+      background-color: rgba(64,88,87,.9);
+      z-index: -1;
+    }
+
+    &__content {
+      max-width: 600px;
+    }
+
+    &__text {
+      font-size: 12px;
+      letter-spacing: .02em;
+      line-height: 20px;
+      padding-bottom: $global-small-gutter;
+    }
+
+    &__btn {
+      display: inline-block;
+      margin-bottom: 38px;
+    }
+  }
 }

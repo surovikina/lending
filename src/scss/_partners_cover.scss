@@ -1,4 +1,57 @@
-.partners_cover {
-  padding: $global-medium-gutter 0;
-  border: 2px solid yellowgreen;
+.partners {
+
+  &_cover {
+    padding: $global-medium-gutter 0;
+
+    .container {
+      padding: 0 $global-medium-gutter;
+
+      & > a {
+        display: inline-block;
+        text-align: right;
+        width: 100%;
+        padding-right: 10px;
+        color:$brand-tertiary ;
+
+        &::after {
+          display: inline-block;
+          content: '';
+          width: 60px;
+          height: 10px;
+          vertical-align: middle;
+          background: url("../src/img/next.svg") no-repeat center;
+          background-size: 60px;
+        }
+      }
+    }
+  }
+
+  .partner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 25%;
+    margin-bottom: $global-margin;
+
+    a {
+      display: block;
+      width: 120px;
+      height: 120px;
+      margin-bottom: $global-margin;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__name {
+      margin-bottom: $global-margin;
+    }
+  }
 }

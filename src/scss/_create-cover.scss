@@ -1,4 +1,16 @@
 .create-cover {
-  border: 2px solid red;
   padding: $global-medium-gutter 0;
+
+  .container {
+    padding: 0 $global-medium-gutter;
+  }
+
+  .create {
+    &__text {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: $global-margin;
+    }
+  }
 }
