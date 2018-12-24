@@ -1,5 +1,10 @@
 .header {
-  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2000;
   padding: $global-xsmall-gutter ;
+  align-items: center;
   background-color: rgba(64, 88, 87, 0.9);
 }
