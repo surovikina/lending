@@ -28,6 +28,11 @@
     &__link {
       display: inline-block;
       padding: 10px;
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+        border-bottom: 2px solid $brand-fourth;
+      }
     }
   }
 
