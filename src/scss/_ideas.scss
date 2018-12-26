@@ -3,6 +3,11 @@
   background: url("../src/img/bg-2-min.jpg");
   background-size: cover;
   z-index: 1000;
+  padding: $global-medium-gutter 0;
+
+  .container {
+    padding: 0 $global-medium-gutter;
+  }
 
   &:after {
     display: block;
@@ -34,6 +39,16 @@
     &:hover {
       background-color: rgba(255,87,34,.91);;
       transition: .3s;
+    }
+  }
+
+  .idea {
+    @include screen-sm {
+      width: 100%;
+    }
+
+    &__title {
+      text-align: center;
     }
   }
 }

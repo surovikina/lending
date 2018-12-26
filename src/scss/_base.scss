@@ -13,6 +13,7 @@ body {
   color: $white;
   background-color: $global-primary-background;
   min-width: 300px;
+  overflow-x: hidden;
 }
 
 img {
@@ -63,6 +64,9 @@ h2 {
   font-size: 16px;
   margin-bottom: $global-large-gutter;
   color: $brand-fourth;
+  @include screen-sm {
+    padding-left: 50px;
+  }
 
   &:after {
     content: '  ';
@@ -73,11 +77,17 @@ h2 {
     width: 60px;
     height: 2px;
     background-color: $brand-fourth;
+    @include screen-sm {
+      width: 40px;
+    }
   }
 }
 
 h3 {
   margin-bottom: 40px;
+  @include screen-sm {
+    margin-bottom: 20px;
+  }
 }
 
 .container {
@@ -95,10 +105,10 @@ h3 {
   background-color: $brand-fourth;
   border: 2px solid $brand-fourth;
   color: #fff;
+  transition: .3s;
 
   &:hover {
     background: transparent;
-    transition: .3s;
   }
 }
 
