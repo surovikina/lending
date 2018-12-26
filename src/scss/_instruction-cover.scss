@@ -47,6 +47,11 @@
       height: 100%;
       background-color: rgba(255, 87, 34, 0.61);
       z-index: -2;
+
+      @include screen-sm {
+
+        width: 80%;
+      }
     }
 
     &:after {
@@ -70,6 +75,9 @@
       letter-spacing: .02em;
       line-height: 20px;
       padding-bottom: $global-small-gutter;
+      @include screen-sm {
+        max-width: 240px;
+      }
     }
 
     &__btn {
